@@ -28,5 +28,18 @@ public class UtestJoinPage {
     public static final Target INPUT_COUNTRY = Target.the("Where to write the country")
             .located(By.id("country"));
     public static final Target BUTTON_NEXT_DEVICE = Target.the("Button to continue the process")
-            .located(By.xpath("//a[@class = 'btn btn-blue pull-right']//span[contains(text(), 'Next: Devices')]"));
+            .located(By.xpath("//a[@class = 'btn btn-blue pull-right']"));
+    public static final Target BUTTON_NEXT_LAST_STEP = Target.the("Button to continue the process")
+            .located(By.xpath("//a[@class = 'btn btn-blue pull-right']//span[contains(text(), 'Next: Last Step')]"));
+    public static final Target INPUT_PASSWORD = Target.the("Where to write the password")
+            .located(By.id("password"));
+    public static final Target INPUT_CONFIRM_PASSWORD = Target.the("Where to write the password")
+            .located(By.id("confirmPassword"));
+    public static final Target INPUT_TERMS_OF_USE = Target.the("Where to write the password")
+            .located(By.id("termOfUse"));
+    public static final Target INPUT_PRIVACY_SETTING = Target.the("Where to write the password")
+            .located(By.id("privacySetting"));
+    public static final Target BUTTON_COMPLETE_SETUP = Target.the("Button to continue the process")
+            .located(By.xpath("//a[@class = 'btn btn-blue']//span[contains(text(), 'Complete Setup')]"));
+
 }
