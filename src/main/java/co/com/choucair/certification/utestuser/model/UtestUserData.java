@@ -9,8 +9,14 @@ public class UtestUserData {
     private String srtDayOfBirth;
     private String srtYearOfBirth;
     private String srtPassword;
+    private String srtCity;
+    private String srtZip;
+    private String srtCountry;
+    private String srtOS;
+    private String srtOSVersion;
+    private String srtOSLanguage;
 
-    public UtestUserData(String srtFirstName, String srtLastName, String srtEmail, String srtMonthOfBirth, String srtDayOfBirth, String srtYearOfBirth, String srtPassword) {
+    public UtestUserData(String srtFirstName, String srtLastName, String srtEmail, String srtMonthOfBirth, String srtDayOfBirth, String srtYearOfBirth, String srtPassword, String srtCity, String srtZip, String srtCountry, String srtOS, String srtOSVersion, String srtOSLanguage) {
         this.srtFirstName = srtFirstName;
         this.srtLastName = srtLastName;
         this.srtEmail = srtEmail;
@@ -18,6 +24,13 @@ public class UtestUserData {
         this.srtDayOfBirth = srtDayOfBirth;
         this.srtYearOfBirth = srtYearOfBirth;
         this.srtPassword = srtPassword;
+        this.srtCity = srtCity;
+        this.srtZip = srtZip;
+        this.srtCountry = srtCountry;
+        this.srtOS = srtOS;
+        this.srtOSVersion = srtOSVersion;
+        this.srtOSLanguage = srtOSLanguage;
+
     }
 
     public String getSrtFirstName() {
@@ -74,5 +87,53 @@ public class UtestUserData {
 
     public void setSrtPassword(String srtPassword) {
         this.srtPassword = srtPassword;
+    }
+
+    public String getSrtCity() {
+        return srtCity;
+    }
+
+    public void setSrtCity(String srtCity) {
+        this.srtCity = srtCity;
+    }
+
+    public String getSrtZip() {
+        return srtZip;
+    }
+
+    public void setSrtZip(String srtZip) {
+        this.srtZip = srtZip;
+    }
+
+    public String getSrtCountry() {
+        return srtCountry;
+    }
+
+    public void setSrtCountry(String srtCountry) {
+        this.srtCountry = srtCountry;
+    }
+
+    public String getSrtOS() {
+        return srtOS;
+    }
+
+    public void setSrtOS(String srtOS) {
+        this.srtOS = srtOS;
+    }
+
+    public String getSrtOSVersion() {
+        return srtOSVersion;
+    }
+
+    public void setSrtOSVersion(String srtOSVersion) {
+        this.srtOSVersion = srtOSVersion;
+    }
+
+    public String getSrtOSLanguage() {
+        return srtOSLanguage;
+    }
+
+    public void setSrtOSLanguage(String srtOSLanguage) {
+        this.srtOSLanguage = srtOSLanguage;
     }
 }

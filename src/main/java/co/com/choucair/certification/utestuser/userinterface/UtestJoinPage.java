@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 
 public class UtestJoinPage {
 
+    //Personal data
     public static final Target BUTTON_JOIN = Target.the("Button that shows the create account")
             .located(By.xpath("//a[contains(text(),'Join Today')]"));
     public static final Target INPUT_FIRST_NAME = Target.the("Where to write the first name")
@@ -21,6 +22,7 @@ public class UtestJoinPage {
             .located(By.id("birthYear"));
     public static final Target BUTTON_NEXT_LOCATION = Target.the("Button to continue the process")
             .located(By.xpath("//a[@class = 'btn btn-blue']//span[contains(text(), 'Next: Location')]"));
+    //location data
     public static final Target INPUT_CITY = Target.the("Where to wirte the email")
             .located(By.id("city"));
     public static final Target INPUT_ZIP = Target.the("Where to write the zip code")
@@ -31,6 +33,7 @@ public class UtestJoinPage {
             .located(By.xpath("//input[@placeholder = 'Select a country']"));
     public static final Target BUTTON_NEXT_DEVICE = Target.the("Button to continue to devices")
             .located(By.xpath("//a[@class = 'btn btn-blue pull-right']//span[contains(text(), 'Next: Devices')]"));
+    //OS data
     public static final Target SELECT_OS = Target.the("Select the OS options")
             .located(By.xpath("//div[@name = 'osId']"));
     public static final Target INPUT_OS = Target.the("Write the OS")
@@ -45,6 +48,7 @@ public class UtestJoinPage {
             .located(By.xpath("//input[@placeholder = 'Select OS language']"));
     public static final Target BUTTON_NEXT_LAST_STEP = Target.the("Button to continue the process")
             .located(By.xpath("//a[@class = 'btn btn-blue pull-right']//span[contains(text(), 'Next: Last Step')]"));
+    //password and legal confirmation
     public static final Target INPUT_PASSWORD = Target.the("Where to write the password")
             .located(By.id("password"));
     public static final Target INPUT_CONFIRM_PASSWORD = Target.the("Where to write the password")
@@ -55,5 +59,6 @@ public class UtestJoinPage {
             .located(By.id("privacySetting"));
     public static final Target BUTTON_COMPLETE_SETUP = Target.the("Button to continue the process")
             .located(By.xpath("//a[@class = 'btn btn-blue']//span[contains(text(), 'Complete Setup')]"));
+    //Log in
 
 }

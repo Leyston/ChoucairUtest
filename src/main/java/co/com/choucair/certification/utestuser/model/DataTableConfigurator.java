@@ -21,7 +21,9 @@ public class DataTableConfigurator implements TypeRegistryConfigurer {
             @Override
             public UtestUserData transform(Map<String, String> entry) throws Throwable {
                 return new UtestUserData(entry.get("srtFirstName"), entry.get("srtLastName"), entry.get("srtEmail")
-                        , entry.get("srtMonthOfBirth"), entry.get("srtDayOfBirth"), entry.get("srtYearOfBirth"), entry.get("srtPassword"));
+                        , entry.get("srtMonthOfBirth"), entry.get("srtDayOfBirth"), entry.get("srtYearOfBirth"), entry.get("srtPassword")
+                        , entry.get("srtCity"),entry.get("srtZip"),entry.get("srtCountry"),entry.get("srtOS"), entry.get("srtOSVersion")
+                        , entry.get("srtOSLanguage"));
             }
 
         };

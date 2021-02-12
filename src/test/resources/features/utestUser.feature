@@ -7,10 +7,12 @@
   Scenario Outline: Create a new user account
     Given Than alex wants to be a new user in Utest
     When He tries to join today
-      | srtFirstName   | srtLastName   | srtEmail   | srtMonthOfBirth   | srtDayOfBirth   | srtYearOfBirth   | srtPassword   |
-      | <srtFirstName> | <srtLastName> | <srtEmail> | <srtMonthOfBirth> | <srtDayOfBirth> | <srtYearOfBirth> | <srtPassword> |
+      | srtFirstName   | srtLastName   | srtEmail   | srtMonthOfBirth   | srtDayOfBirth   | srtYearOfBirth   | srtPassword   | srtCity   | srtZip   | srtCountry   | srtOS   | srtOSVersion   | srtOSLanguage   |
+      | <srtFirstName> | <srtLastName> | <srtEmail> | <srtMonthOfBirth> | <srtDayOfBirth> | <srtYearOfBirth> | <srtPassword> | <srtCity> | <srtZip> | <srtCountry> | <srtOS> | <srtOSVersion> | <srtOSLanguage> |
 
     Then he creates an account
+      | srtEmail   |
+      | <srtEmail> |
     Examples:
-      | srtFirstName | srtLastName | srtEmail              | srtMonthOfBirth | srtDayOfBirth | srtYearOfBirth | srtPassword     |
-      | Leyston      | Onate       | leyston52@hotmail.com | May               | 2             | 1996           | QUFyN5Zr!Wjr8mF |
+      | srtFirstName | srtLastName | srtEmail           | srtMonthOfBirth | srtDayOfBirth | srtYearOfBirth | srtPassword     | srtCity    | srtZip | srtCountry | srtOS   | srtOSVersion | srtOSLanguage |
+      | Leyston      | Onate       | delerium025@gmail.com | May             | 2             | 1996           | TMFm2#aRb*fMrd6 | Los Patios | 541010 | Colombia   | Windows | 10 64-bit    | English       |
