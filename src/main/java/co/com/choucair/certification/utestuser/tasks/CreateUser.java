@@ -5,12 +5,11 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
+import net.serenitybdd.screenplay.actions.Clear;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.SelectFromOptions;
-import net.serenitybdd.screenplay.actions.selectactions.SelectByVisibleTextFromTarget;
-import net.serenitybdd.screenplay.rest.interactions.Options;
-import org.openqa.selenium.support.ui.Select;
+;
 
 public class CreateUser implements Task {
 
@@ -46,6 +45,10 @@ public class CreateUser implements Task {
                 SelectFromOptions.byVisibleText(srtDayOfBirth).from(UtestJoinPage.SELECT_DAY_BIRTH),
                 SelectFromOptions.byVisibleText(srtYearOfBirth).from(UtestJoinPage.SELECT_YEAR_BIRTH),
                 Click.on(UtestJoinPage.BUTTON_NEXT_LOCATION),
+                Enter.theValue("Los Patios").into(UtestJoinPage.INPUT_CITY),
+                Enter.theValue("541010").into(UtestJoinPage.INPUT_ZIP),
+                Click.on(UtestJoinPage.INPUT_COUNTRY),
+                Enter.theValue("Colombia").into(UtestJoinPage.INPUT_COUNTRY),
                 Click.on(UtestJoinPage.BUTTON_NEXT_DEVICE),
                 Click.on(UtestJoinPage.BUTTON_NEXT_LAST_STEP),
                 Enter.theValue(srtPassword).into(UtestJoinPage.INPUT_PASSWORD),

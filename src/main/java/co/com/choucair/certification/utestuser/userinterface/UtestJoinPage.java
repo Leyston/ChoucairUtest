@@ -26,9 +26,11 @@ public class UtestJoinPage {
     public static final Target INPUT_ZIP = Target.the("Where to write the zip code")
             .located(By.id("zip"));
     public static final Target INPUT_COUNTRY = Target.the("Where to write the country")
-            .located(By.id("country"));
+            .located(By.xpath("//span[contains(text(), 'Colombia']"));
+    public static final Target SELECT_COUNTRY = Target.the("Select the country")
+            .located(By.xpath("//input[@class = 'form-control ui-select-search ng-valid ng-touched ng-dirty ng-empty' and @placeholder = 'Select a country']"));
     public static final Target BUTTON_NEXT_DEVICE = Target.the("Button to continue the process")
-            .located(By.xpath("//a[@class = 'btn btn-blue pull-right']"));
+            .located(By.xpath("//a[@class = 'btn btn-blue pull-right']//span[contains(text(), 'Next: Devices')]"));
     public static final Target BUTTON_NEXT_LAST_STEP = Target.the("Button to continue the process")
             .located(By.xpath("//a[@class = 'btn btn-blue pull-right']//span[contains(text(), 'Next: Last Step')]"));
     public static final Target INPUT_PASSWORD = Target.the("Where to write the password")

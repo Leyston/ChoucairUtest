@@ -34,7 +34,8 @@ public class UtestStepDefinitions {
 
     @Then("he creates an account")
     public void heCreatesAnAccount() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+/*
+        OnStage.theActorCalled("alex").attemptsTo(Answer.toThe());
+*/
     }
 }
