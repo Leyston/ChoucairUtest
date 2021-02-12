@@ -1,3 +1,6 @@
+//Part of the old process of verification
+
+/*
 package co.com.choucair.certification.utestuser.userinterface;
 
 import net.serenitybdd.screenplay.targets.Target;
@@ -16,3 +19,4 @@ public class UtestLoginPage {
     public static final Target EMIL_NAME = Target.the("Extract the email")
             .located(By.xpath("//span"));
 }
+*/

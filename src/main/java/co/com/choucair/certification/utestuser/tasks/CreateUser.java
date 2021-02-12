@@ -71,12 +71,13 @@ public class CreateUser implements Task {
                 Enter.theValue(srtPassword).into(UtestJoinPage.INPUT_PASSWORD),
                 Enter.theValue(srtPassword).into(UtestJoinPage.INPUT_CONFIRM_PASSWORD),
                 Click.on(UtestJoinPage.INPUT_TERMS_OF_USE),
-                Click.on(UtestJoinPage.INPUT_PRIVACY_SETTING),
-                Click.on(UtestJoinPage.BUTTON_COMPLETE_SETUP),
+                Click.on(UtestJoinPage.INPUT_PRIVACY_SETTING)
+                //Old process to verify if the user was created
+                /*Click.on(UtestJoinPage.BUTTON_COMPLETE_SETUP),
                 Click.on(UtestLoginPage.LOGIN_BUTTON),
                 Enter.theValue(srtEmail).into(UtestLoginPage.INPUT_USER),
                 Enter.theValue(srtPassword).into(UtestLoginPage.INPUT_PASSWORD),
-                Click.on(UtestLoginPage.ENTER_BUTTON)
+                Click.on(UtestLoginPage.ENTER_BUTTON)*/
 
                 );
     }

@@ -11,8 +11,7 @@
       | <srtFirstName> | <srtLastName> | <srtEmail> | <srtMonthOfBirth> | <srtDayOfBirth> | <srtYearOfBirth> | <srtPassword> | <srtCity> | <srtZip> | <srtCountry> | <srtOS> | <srtOSVersion> | <srtOSLanguage> |
 
     Then he creates an account
-      | srtEmail   |
-      | <srtEmail> |
+
     Examples:
-      | srtFirstName | srtLastName | srtEmail           | srtMonthOfBirth | srtDayOfBirth | srtYearOfBirth | srtPassword     | srtCity    | srtZip | srtCountry | srtOS   | srtOSVersion | srtOSLanguage |
-      | Leyston      | Onate       | delerium025@gmail.com | May             | 2             | 1996           | TMFm2#aRb*fMrd6 | Los Patios | 541010 | Colombia   | Windows | 10 64-bit    | English       |
+      | srtFirstName | srtLastName | srtEmail                   | srtMonthOfBirth | srtDayOfBirth | srtYearOfBirth | srtPassword     | srtCity    | srtZip | srtCountry | srtOS   | srtOSVersion | srtOSLanguage |
+      | Leyston      | Onate       | testingutestpage@gmail.com | May             | 2             | 1996           | TMFm2#aRb*fMrd6 | Los Patios | 541010 | Colombia   | Windows | 10 64-bit    | English       |

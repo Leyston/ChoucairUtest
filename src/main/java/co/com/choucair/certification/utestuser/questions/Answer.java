@@ -1,5 +1,6 @@
 package co.com.choucair.certification.utestuser.questions;
 
+import co.com.choucair.certification.utestuser.userinterface.UtestJoinPage;
 import co.com.choucair.certification.utestuser.userinterface.UtestLoginPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
@@ -20,7 +21,7 @@ public class Answer implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
         boolean result;
-        String emailName = Text.of(UtestLoginPage.EMIL_NAME).viewedBy(actor).asString();
+        String emailName = Text.of(UtestJoinPage.BUTTON_COMPLETE_SETUP).viewedBy(actor).asString();
         if (question.equals(emailName)) result = true;
         else result = false;
         return result;

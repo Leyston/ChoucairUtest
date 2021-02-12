@@ -36,8 +36,9 @@ public class UtestStepDefinitions {
     }
 
     @Then("he creates an account")
-    public void heCreatesAnAccount(List<UtestUserData> utestUserData) throws Throwable{
+    public void heCreatesAnAccount() throws Throwable{
 
-        OnStage.theActorCalled("alex").should(GivenWhenThen.seeThat(Answer.toThe(utestUserData.get(0).getSrtEmail())));
+        String question = "Complete Setup";
+        OnStage.theActorCalled("alex").should(GivenWhenThen.seeThat(Answer.toThe(question)));
     }
 }

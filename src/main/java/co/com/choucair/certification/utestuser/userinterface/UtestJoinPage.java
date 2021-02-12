@@ -59,6 +59,6 @@ public class UtestJoinPage {
             .located(By.id("privacySetting"));
     public static final Target BUTTON_COMPLETE_SETUP = Target.the("Button to continue the process")
             .located(By.xpath("//a[@class = 'btn btn-blue']//span[contains(text(), 'Complete Setup')]"));
-    //Log in
+
 
 }
