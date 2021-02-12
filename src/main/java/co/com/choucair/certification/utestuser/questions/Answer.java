@@ -1,7 +1,6 @@
 package co.com.choucair.certification.utestuser.questions;
 
 import co.com.choucair.certification.utestuser.userinterface.UtestJoinPage;
-import co.com.choucair.certification.utestuser.userinterface.UtestLoginPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
