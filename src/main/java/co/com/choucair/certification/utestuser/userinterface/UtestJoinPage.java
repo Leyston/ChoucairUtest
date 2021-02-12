@@ -25,12 +25,24 @@ public class UtestJoinPage {
             .located(By.id("city"));
     public static final Target INPUT_ZIP = Target.the("Where to write the zip code")
             .located(By.id("zip"));
-    public static final Target INPUT_COUNTRY = Target.the("Where to write the country")
-            .located(By.xpath("//span[contains(text(), 'Colombia']"));
-    public static final Target SELECT_COUNTRY = Target.the("Select the country")
-            .located(By.xpath("//input[@class = 'form-control ui-select-search ng-valid ng-touched ng-dirty ng-empty' and @placeholder = 'Select a country']"));
-    public static final Target BUTTON_NEXT_DEVICE = Target.the("Button to continue the process")
+    public static final Target SELECT_COUNTRY = Target.the("Select the country options")
+            .located(By.xpath("//div[@name = 'countryId']"));
+    public static final Target INPUT_COUNTRY = Target.the("Write the country")
+            .located(By.xpath("//input[@placeholder = 'Select a country']"));
+    public static final Target BUTTON_NEXT_DEVICE = Target.the("Button to continue to devices")
             .located(By.xpath("//a[@class = 'btn btn-blue pull-right']//span[contains(text(), 'Next: Devices')]"));
+    public static final Target SELECT_OS = Target.the("Select the OS options")
+            .located(By.xpath("//div[@name = 'osId']"));
+    public static final Target INPUT_OS = Target.the("Write the OS")
+            .located(By.xpath("//input[@placeholder = 'Select OS']"));
+    public static final Target SELECT_OS_VERSION = Target.the("Select the OS version option")
+            .located(By.xpath("//div[@name = 'osVersionId']"));
+    public static final Target INPUT_OS_VERSION = Target.the("Write the OS version")
+            .located(By.xpath("//input[@placeholder = 'Select a Version']"));
+    public static final Target SELECT_OS_LANGUAGE = Target.the("Select the OS language")
+            .located(By.xpath("//div[@name = 'osLanguageId']"));
+    public static final Target INPUT_OS_LANGUAGE = Target.the("Write the OS language")
+            .located(By.xpath("//input[@placeholder = 'Select OS language']"));
     public static final Target BUTTON_NEXT_LAST_STEP = Target.the("Button to continue the process")
             .located(By.xpath("//a[@class = 'btn btn-blue pull-right']//span[contains(text(), 'Next: Last Step')]"));
     public static final Target INPUT_PASSWORD = Target.the("Where to write the password")
